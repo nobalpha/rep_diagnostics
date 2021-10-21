@@ -1,0 +1,190 @@
+<!--
+    TODO: 
+    # Kısa bir about yazısı
+    # Hangi endpoint'lerin kullanılacağının belirlenmesi
+    # Belirlenen endpointlere göre nav-bar'ın düzenlenerek ana sayfadaki section'ların işlenmesi
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-snap-type: y mandatory">
+    <head>
+        <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon-96x96.png"
+        />
+
+        <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+        <title>REP!</title>
+
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>
+    <body style="overflow-y: scroll">
+        <div class="sidebar">
+            <div class="logo-details">
+                <a href="index.html"><i class="bx bx-dna icon"></i></a>
+                <div class="logo_name">REP Diagnostics</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span class="links_name">Team</span>
+                        <span class="tooltip">Team</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Team.html">Team Members</a></li>
+                        <li><a href="./Mentors.html">Mentors</a></li>
+                        <li>
+                            <a href="./Collaborations.html">Collaborations</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-search-alt-2"></i>
+                        <span class="links_name">Project</span>
+                        <span class="tooltip">Project</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Description.html">Description</a></li>
+                        <li><a href="./Demonstrate.html">Demonstration</a></li>
+                        <li><a href="./Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Parts.html">
+                        <i class="bx bx-pyramid"></i>
+                        <span class="links_name">Parts</span>
+                        <span class="tooltip">Parts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Human_Practices.html">
+                        <i class="bx bx-broadcast"></i>
+                        <span class="links_name">Human Practices</span>
+                        <span class="tooltip">Human Practices</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-scene">
+            <section id="desc" class="sub-section home">
+                <h1>Description</h1>
+                <a><span></span>Scroll</a>
+                <p></p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black; margin-top: 10%">
+                    What is the problem?
+                </h1>
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 7%; width: 55%"
+                >
+                    Polymerase Chain Reaction (PCR) is the most widely used
+                    method for detection of infectious agents in clinical
+                    samples by specific amplification of their nucleic acids.
+                    However, PCR requires thermal cycling therefore an
+                    instrument called thermal cycler which is only available in
+                    molecular biology laboratories. Therefore PCR cannot be used
+                    as a point of care diagnostic methods. In order to amplify
+                    double stranded DNA the first step is the denaturation of
+                    double strands by heating DNA to 95°C in the thermal cycler.
+                    There is also loop mediated amplification technique (LAMP)
+                    that can do DNA amplification without requiring thermal
+                    cycling; however, it still requires a heating block since
+                    isothermal amplification by LAMP is achieved at 65°C.
+                    <br />Our inspiration is to generate the path to the new
+                    rapid, easy, low cost and accurate diagnostic tests.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black; margin-top: 10%">
+                    What is the unmet medical need?
+                </h1>
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 10%; width: 40%"
+                >
+                    As known, detection of infectious agents are diagnosed
+                    mostly by using PCR or rapid antigen-antibody interaction
+                    tests in clinical samples. But PCR is not practical since
+                    they require expensive laboratory instruments and
+                    experienced laboratory personnel. On the other hand, antigen
+                    tests are diagnostic tests that give results in a short
+                    time, however with less sensitivity due to lack of signal
+                    amplification ability like DNA or RNA templates.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black; margin-top: 10%">
+                    What is our target for a novel revolution?
+                </h1>
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 10%; width: 40%"
+                >
+                    Our target is to identify rapid easy point of care
+                    diagnostics without the need for any instrument and
+                    experienced laboratory personnel by combining antigen tests
+                    and nucleic acid amplification at room temperature which is
+                    REP Diagnostics. The inspiration behind our project is the
+                    need for an easy way to diagnose illnesses in order to help
+                    patients find treatment earlier.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black; margin-top: 5%">
+                    What is the method to the light of new diagnosis?
+                </h1>
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 9%; width: 35%"
+                >
+                    Our method depends on cutting one strand of double stranded
+                    DNA by a nicking enzyme and separation of strands from each
+                    other by strand displacement activity of DNA polymerase.
+                    <br />
+                    For nucleic acid amplification, DNA strands are separated at
+                    room temperature by using the nicking enzyme. When a nicking
+                    enzyme breaks the sugar phosphate bond of one strand the
+                    3’end of DNA functions like a primer where DNA polymerase
+                    binds and starts elongating DNA on one strand. During this
+                    DNA synthesis, the other strand is displaced separating the
+                    two strands from each other. Amplification of double
+                    stranded DNA is achieved by DNA synthesis on the displaced
+                    strand using reverse primers. The new signal amplification
+                    method can easily adapt to the nucleic acid sequence of
+                    various infectious agents in clinical samples specifically.
+                </p>
+            </section>
+        </div>
+        <!-- There'll be a great animation or a team/project photo and a great fonted banner  -->
+    </body>
+</html>

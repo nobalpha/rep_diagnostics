@@ -1,0 +1,161 @@
+<!--
+    TODO: 
+    # Kısa bir about yazısı
+    # Hangi endpoint'lerin kullanılacağının belirlenmesi
+    # Belirlenen endpointlere göre nav-bar'ın düzenlenerek ana sayfadaki section'ların işlenmesi
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-snap-type: y mandatory">
+    <head>
+        <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon-96x96.png"
+        />
+
+        <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+        <title>REP!</title>
+
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>
+    <body style="overflow-y: scroll">
+        <div class="sidebar">
+            <div class="logo-details">
+                <a href="index.html"><i class="bx bx-dna icon"></i></a>
+                <div class="logo_name">REP Diagnostics</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span class="links_name">Team</span>
+                        <span class="tooltip">Team</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Team.html">Team Members</a></li>
+                        <li><a href="./Mentors.html">Mentors</a></li>
+                        <li>
+                            <a href="./Collaborations.html">Collaborations</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-search-alt-2"></i>
+                        <span class="links_name">Project</span>
+                        <span class="tooltip">Project</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Description.html">Description</a></li>
+                        <li><a href="./Demonstrate.html">Demonstration</a></li>
+                        <li><a href="./Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Parts.html">
+                        <i class="bx bx-pyramid"></i>
+                        <span class="links_name">Parts</span>
+                        <span class="tooltip">Parts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Human_Practices.html">
+                        <i class="bx bx-broadcast"></i>
+                        <span class="links_name">Human Practices</span>
+                        <span class="tooltip">Human Practices</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-scene">
+            <section id="collabs" class="sub-section home">
+                <h1>Collaborations</h1>
+                <a><span></span>Scroll</a>
+                <p></p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Duesseldorf</h1>
+                <img
+                    src="./dusseldorf.jpg"
+                    alt="Dusseldorf's logo"
+                    class="member_image"
+                />
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 7%; width: 25%"
+                >
+                    The Annual Postcard Project hosted by iGEM team Düsseldorf
+                    2021: We designed our own postcard and presented our project
+                    to nearly 90 teams from 5 different continents. We had a
+                    chance to learn what everyone was working on and see their
+                    creative postcard designs.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">iBowu-China</h1>
+                <img
+                    src="./ibowu_china.jpg"
+                    alt="iBowu-China's logo"
+                    class="member_image"
+                />
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 7%; width: 25%"
+                >
+                    The Biodoodle project hosted by team iBowu-China: We
+                    illustrated doodles for a coloring book designed for K12
+                    readers, aiming to make Biology more fun for new learners.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1
+                    class="heading"
+                    style="color: black; margin-top: 7%; width: 25%"
+                >
+                    SZU-China
+                </h1>
+                <img
+                    src="./szu_china.png"
+                    alt="SZU-China's logo"
+                    class="member_image"
+                />
+                <p
+                    class="paragraph"
+                    style="color: black; margin-top: 7%; width: 25%"
+                >
+                    Translation for IntestiNO card game hosted by team
+                    SZU-China: We translated their educational card game to our
+                    native language which is Turkish for educational promotion
+                    to the local public.
+                </p>
+            </section>
+        </div>
+        <!-- There'll be a great animation or a team/project photo and a great fonted banner  -->
+    </body>
+</html>

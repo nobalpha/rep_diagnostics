@@ -1,0 +1,227 @@
+<!--
+    TODO: 
+    # Kısa bir about yazısı
+    # Hangi endpoint'lerin kullanılacağının belirlenmesi
+    # Belirlenen endpointlere göre nav-bar'ın düzenlenerek ana sayfadaki section'ların işlenmesi
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-snap-type: y mandatory">
+    <head>
+        <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon-96x96.png"
+        />
+
+        <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+        <title>REP!</title>
+
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>
+    <body style="overflow-y: scroll">
+        <div class="sidebar">
+            <div class="logo-details">
+                <a href="index.html"><i class="bx bx-dna icon"></i></a>
+                <div class="logo_name">REP Diagnostics</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span class="links_name">Team</span>
+                        <span class="tooltip">Team</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Team.html">Team Members</a></li>
+                        <li><a href="./Mentors.html">Mentors</a></li>
+                        <li>
+                            <a href="./Collaborations.html">Collaborations</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-search-alt-2"></i>
+                        <span class="links_name">Project</span>
+                        <span class="tooltip">Project</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Description.html">Description</a></li>
+                        <li><a href="./Demonstrate.html">Demonstration</a></li>
+                        <li><a href="./Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Parts.html">
+                        <i class="bx bx-pyramid"></i>
+                        <span class="links_name">Parts</span>
+                        <span class="tooltip">Parts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Human_Practices.html">
+                        <i class="bx bx-broadcast"></i>
+                        <span class="links_name">Human Practices</span>
+                        <span class="tooltip">Human Practices</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-scene">
+            <section id="team" class="sub-section home">
+                <h1>Our Team</h1>
+                <a><span></span>Scroll</a>
+                <p></p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Zeynep Çakır</h1>
+                <img
+                    class="member_image"
+                    src="./Zeynep_Cakir.jpg"
+                    alt="Zeynep's image"
+                />
+                <p class="paragraph" style="color: black">
+                    Hello, I am Zeynep Çakır. I was born in Istanbul and I’m 17
+                    years old. I go to Notre Dame de Sion French High School and
+                    I am in eleventh grade. I’m interested in biological
+                    sciences, coding and playing tennis. I love reading books,
+                    spending time with my friends and watching tv shows. The
+                    main reason I joined iGEM was to learn about synthetic
+                    biology and meet people with the same interests from all
+                    around the world.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Ceren Yurdakul</h1>
+                <img
+                    class="member_image"
+                    src="./Ceren_Yurdakul.jpg"
+                    alt="Ceren's image"
+                />
+                <p class="paragraph" style="color: black">
+                    Hi, I am Ceren Yurdakul. I was born in Istanbul, in 2004. I
+                    am in eleventh grade in Notre Dame de Sion French High
+                    School. I am interested in medicine and chemistry. I love
+                    doing sports such as tennis and fitness. I spend most of my
+                    free time hanging out with my friends. I participated in
+                    iGEM in order to gain experience and learn about problems
+                    and their possible solutions.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Zeynep Alıcı</h1>
+                <img
+                    class="member_image"
+                    src="./Zeynep_Alici.jpg"
+                    alt="Zeynep's image"
+                />
+                <p class="paragraph" style="color: black">
+                    Hi, I am Zeynep Alıcı. I was born in Istanbul in 2003. I go
+                    to Saint Benoit French High School and I am in twelfth
+                    grade. I am interested in biology, medicine and mathematics.
+                    I love playing volleyball, reading books and spending time
+                    with my friends. I joined İGEM to improve myself in
+                    synthetic biology and find solutions to worldwide problems.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Azra Derin Şansal</h1>
+                <img
+                    class="member_image"
+                    src="./Azra_Derin_Sansal.jpg"
+                    alt="Azra's image"
+                />
+                <p class="paragraph" style="color: black">
+                    Hi, I am Azra Derin Şansal. I was born in Istanbul, in 2005.
+                    I go to Sainte Pulchérie French High School and I am in
+                    tenth grade. I am interested in biological sciences and
+                    mathematics. I love reading books and I play the electric
+                    guitar. I’m a part of the robotics team of my school and I
+                    do mechanics. I participated in iGEM to learn about
+                    worldwide problems, find solutions to them and learn about
+                    synthetic biology.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Yalın Kumru</h1>
+                <img
+                    class="member_image"
+                    src="./Yalin_Kumru.jpg"
+                    alt="Yalın's image"
+                />
+                <p class="paragraph" style="color: black">
+                    Hi, I’m Yalın Kumru and I’m 18 years old. I was born and
+                    raised in Istanbul, Turkey. I’m a senior at Notre Dame de
+                    Sion French high school. Since I want to study medicine,
+                    iGEM is a really nice opportunity for me to expand my
+                    knowledge on biology. Not only did I enjoy working with this
+                    team, but I also gained research and lab experience.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Nezih Arın Alanay</h1>
+                <img
+                    class="member_image"
+                    src="./Arin_Alanay.jpg"
+                    alt="Arın's image"
+                />
+                <p class="paragraph" style="color: black">
+                    I’m Nezih Arın Alanay and I’m a 17 year old junior at Notre
+                    Dame de Sion French high school. I was born in Ankara, the
+                    capital of Turkey. iGEM is a big step toward my goal of
+                    pursuing a career in biology. I am interested in molecular
+                    biology and advanced mathematics. This process helped me
+                    develop my research and problem solving skills, and I had
+                    lots of fun working with this team.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Esma Aybakan</h1>
+                <img
+                    class="member_image"
+                    src="./Esma_Aybakan.jpeg"
+                    alt="Esma's image"
+                />
+                <p class="paragraph" style="color: black">
+                    She is a Ph.D. student of Medical Biotechnology Program at
+                    Acıbadem University. She is interested in phage display
+                    technology, microbiology, synthetic biology,
+                    biotechnological innovations and entrepreneurship. She has
+                    got experiences that laboratory works for four years. She is
+                    taken some courses about the entrepreneurship and project
+                    planing. She likes writing literary essays, visiting art
+                    galleries, painting and doing Ebru art. She wants to develop
+                    the new diagnostic tests in medical fields that helps to
+                    people.
+                </p>
+            </section>
+        </div>
+        <!-- There'll be a great animation or a team/project photo and a great fonted banner  -->
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!--
+    TODO: 
+    # Kısa bir about yazısı
+    # Hangi endpoint'lerin kullanılacağının belirlenmesi
+    # Belirlenen endpointlere göre nav-bar'ın düzenlenerek ana sayfadaki section'ların işlenmesi
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-snap-type: y mandatory">
+    <head>
+        <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon-96x96.png"
+        />
+
+        <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+        <title>REP!</title>
+
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>
+    <body style="overflow-y: scroll">
+        <div class="sidebar">
+            <div class="logo-details">
+                <a href="index.html"><i class="bx bx-dna icon"></i></a>
+                <div class="logo_name">REP Diagnostics</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span class="links_name">Team</span>
+                        <span class="tooltip">Team</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Team.html">Team Members</a></li>
+                        <li><a href="./Mentors.html">Mentors</a></li>
+                        <li>
+                            <a href="./Collaborations.html">Collaborations</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-search-alt-2"></i>
+                        <span class="links_name">Project</span>
+                        <span class="tooltip">Project</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Description.html">Description</a></li>
+                        <li><a href="./Demonstrate.html">Demonstration</a></li>
+                        <li><a href="./Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Parts.html">
+                        <i class="bx bx-pyramid"></i>
+                        <span class="links_name">Parts</span>
+                        <span class="tooltip">Parts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Human_Practices.html">
+                        <i class="bx bx-broadcast"></i>
+                        <span class="links_name">Human Practices</span>
+                        <span class="tooltip">Human Practices</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-scene">
+            <section id="human_practices" class="sub-section home">
+                <h1>Human Practices</h1>
+                <a><span></span>Scroll</a>
+                <p></p>
+            </section>
+            <section class="sub-section">
+                <h1
+                    class="heading"
+                    style="color: black; margin-top: 7%; width: 55%"
+                >
+                    Survey with high school students
+                </h1>
+                <p
+                    class="paragraph"
+                    style="
+                        color: black;
+                        margin: 12% auto;
+                        width: 35%;
+                        font-weight: bolder;
+                    "
+                >
+                    We prepared a survey about COVID-19 current testing methods
+                    and people’s experiences with these tests. We got their
+                    thoughts about a new possible diagnostic test and if they
+                    would be willing to use it.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">
+                    Presentation to students
+                </h1>
+                <div
+                    class="grid"
+                    style="grid-template-columns: 32% 30%; height: 40%"
+                >
+                    <img
+                        src="./Zoom_1.jpg"
+                        alt="A presentation photo"
+                        class="member_image"
+                        style="width: 100%; border-radius: 0"
+                    />
+                    <img
+                        src="./Zoom_2.jpg"
+                        alt="A presentation photo"
+                        class="member_image"
+                        style="width: 100%; border-radius: 0"
+                    />
+                </div>
+                <p
+                    class="paragraph"
+                    style="
+                        color: black;
+                        margin: 4% auto;
+                        width: 35%;
+                        font-weight: bolder;
+                    "
+                >
+                    We gave a presentation to students around our age and
+                    explained what iGEM is. We explained the issue and the
+                    solution that we have been working on. We aimed to make
+                    known the knowledge of synthetic biology and recruit new
+                    students who might be interested. After our presentation,
+                    our team answered the audience’s questions to further
+                    improve their comprehension.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Public interview</h1>
+
+                <video
+                    controls
+                    class="member_image"
+                    style="width: 40%; border-radius: 0"
+                >
+                    <source src="./interview.mp4" type="video/mp4" />
+
+                    Your browser does not support the video tag.
+                </video>
+                <p
+                    class="paragraph"
+                    style="
+                        color: black;
+                        margin: 3% auto;
+                        width: 35%;
+                        font-weight: bolder;
+                    "
+                >
+                    We conducted public interviews and got their thoughts on
+                    these methods. We questioned their knowledge about it and
+                    furthered their understanding. We explained our goals and
+                    what we were trying to accomplish by doing these interviews.
+                </p>
+            </section>
+        </div>
+        <!-- There'll be a great animation or a team/project photo and a great fonted banner  -->
+    </body>
+</html>

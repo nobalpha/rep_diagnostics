@@ -1,0 +1,196 @@
+<!--
+    TODO: 
+    # Kısa bir about yazısı
+    # Hangi endpoint'lerin kullanılacağının belirlenmesi
+    # Belirlenen endpointlere göre nav-bar'ın düzenlenerek ana sayfadaki section'ların işlenmesi
+-->
+
+<!DOCTYPE html>
+<html lang="en" style="scroll-snap-type: y mandatory">
+    <head>
+        <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./favicon-96x96.png"
+        />
+
+        <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+        <title>REP!</title>
+
+        <link
+            href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Import the webpage's javascript file -->
+        <script src="/script.js" defer></script>
+    </head>
+    <body style="overflow-y: scroll">
+        <div class="sidebar">
+            <div class="logo-details">
+                <a href="index.html"><i class="bx bx-dna icon"></i></a>
+                <div class="logo_name">REP Diagnostics</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="bx bx-group"></i>
+                        <span class="links_name">Team</span>
+                        <span class="tooltip">Team</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Team.html">Team Members</a></li>
+                        <li><a href="./Mentors.html">Mentors</a></li>
+                        <li>
+                            <a href="./Collaborations.html">Collaborations</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-search-alt-2"></i>
+                        <span class="links_name">Project</span>
+                        <span class="tooltip">Project</span>
+                    </a>
+
+                    <ul>
+                        <li><a href="./Description.html">Description</a></li>
+                        <li><a href="./Demonstrate.html">Demonstration</a></li>
+                        <li><a href="./Attributions.html">Attributions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Parts.html">
+                        <i class="bx bx-pyramid"></i>
+                        <span class="links_name">Parts</span>
+                        <span class="tooltip">Parts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./Human_Practices.html">
+                        <i class="bx bx-broadcast"></i>
+                        <span class="links_name">Human Practices</span>
+                        <span class="tooltip">Human Practices</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-scene">
+            <section id="attr" class="sub-section home">
+                <h1>Attributions</h1>
+                <a><span></span>Scroll</a>
+                <p></p>
+            </section>
+            <section class="sub-section">
+                <p
+                    class="paragraph"
+                    style="
+                        color: black;
+                        margin: 20% auto;
+                        width: 35%;
+                        font-weight: bolder;
+                    "
+                >
+                    We’d like to thank everyone who helped us throughout our
+                    iGEM journey in 2021. Also, our special thanks to Acıbadem
+                    Mehmet Ali Aydınlar University for providing us all the
+                    facilities both during lab work and our meetings.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black; margin-bottom: 3%">
+                    Our Dedicated Team
+                </h1>
+                <p class="paragraph" style="color: black">
+                    <b>Dr. Zühtü Tanıl Kocagöz</b>, Head of Acıbadem Department
+                    of Medical Biotechnology, our Primary PI, provided us with
+                    general support, project support and presentation coaching.
+                    <br />
+                    <b>Asst. Prof. Erkan Mozioğlu</b>, from Acıbadem Department
+                    of Medical Biotechnology, our Secondary PI, provided us with
+                    general support and specifically lab support. <br /><br />
+                    <b>Zeynep Çakır</b>, high school student, worked in video
+                    design, project presentation and social media management.
+                    <br />
+                    <b>Arın Alanay</b>, high school student, worked in project
+                    presentation, lab work and human practices. <br />
+                    <b>Yalın Kumru</b>, high school student, worked in project
+                    presentation, lab work and human practices. <br />
+                    <b>Ceren Yurdakul</b>, high school student, worked in
+                    project presentation, human practices and public relations.
+                    <br />
+                    <b>Azra Derin Şansal</b>, high school student, worked in
+                    project presentation and social media management. <br />
+                    <b>Zeynep Alıcı</b>, high school student, worked in project
+                    presentation, human practices and public relations. <br />
+                    <b>Roni Kolukısayan</b>, high school student, worked in
+                    wiki, graphics and video design. <br />
+                    <b>Azra Yumrukçal</b>, high school student, our artist,
+                    worked in graphics and video design.
+                </p>
+            </section>
+            <section class="sub-section">
+                <h1 class="heading" style="color: black">Our Sponsor</h1>
+                <img
+                    src="./AcibademLogo.png"
+                    alt="Acıbadem University's logo"
+                    class="member_image"
+                    style="width: 14%; border-radius: 0"
+                />
+                <p class="paragraph" style="color: black">
+                    Acıbadem University supported us with lab access and meeting
+                    rooms for our weekly gatherings, generously provided us with
+                    financial support.
+                </p>
+                <img
+                    src="./IDT_DNA_Logo.png"
+                    alt="IDT DNA's logo"
+                    class="member_image"
+                    style="width: 14%; border-radius: 0"
+                />
+                <p class="paragraph" style="color: black">
+                    We gratefully acknowledge for synthetic DNA molecules from
+                    idt DNA Technologies.
+                </p>
+                <img
+                    src="./TWIST_DNA.png"
+                    alt="TWIST DNA's logo"
+                    class="member_image"
+                    style="width: 14%; border-radius: 0"
+                />
+                <p class="paragraph" style="color: black">
+                    We thank Twist Bioscience for supporting our project.
+                </p>
+                <br />
+                <br />
+                <p class="paragraph" style="color: black; margin-bottom: 5%">
+                    Pre-iGEM Training Members participated in a 3-day biosafety
+                    and laboratory techniques training program organized by iGEM
+                    Academy. In this program, team members received Biosafety
+                    and Basic Laboratory Techniques, iGEM Biosafety Policies,
+                    Introduction to Molecular Biology Laboratory and Recombinant
+                    DNA Technology courses.
+                </p>
+            </section>
+        </div>
+        <!-- There'll be a great animation or a team/project photo and a great fonted banner  -->
+    </body>
+</html>
